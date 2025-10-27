@@ -1,0 +1,278 @@
+{
+  "name": "labslaac",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-c975c12c41c9",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBS68NdgRRQr0O6LBmg2Io9V6fLk7GdNd8G+VCW2JYhhSEaux1oZZCk7OAE7vx0cZ87rPpEGVdnq4NhXpCpLP1A="],
+  "nodes": {
+    "PC1": {
+      "index": "0",
+      "shortname": "PC1",
+      "longname": "clab-labslaac-PC1",
+      "fqdn": "PC1.labslaac.io",
+      "group": "",
+      "labdir": "/workspaces/dhcp6/clab-labslaac/PC1",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c975c12c41c9",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/dhcp6/clab-labslaac/PC1",
+        "clab-node-longname": "clab-labslaac-PC1",
+        "clab-node-name": "PC1",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/dhcp6/slaac-topo.yml",
+        "containerlab": "labslaac"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "PC2": {
+      "index": "1",
+      "shortname": "PC2",
+      "longname": "clab-labslaac-PC2",
+      "fqdn": "PC2.labslaac.io",
+      "group": "",
+      "labdir": "/workspaces/dhcp6/clab-labslaac/PC2",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c975c12c41c9",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/dhcp6/clab-labslaac/PC2",
+        "clab-node-longname": "clab-labslaac-PC2",
+        "clab-node-name": "PC2",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/dhcp6/slaac-topo.yml",
+        "containerlab": "labslaac"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "PC3": {
+      "index": "2",
+      "shortname": "PC3",
+      "longname": "clab-labslaac-PC3",
+      "fqdn": "PC3.labslaac.io",
+      "group": "",
+      "labdir": "/workspaces/dhcp6/clab-labslaac/PC3",
+      "kind": "linux",
+      "image": "ghcr.io/hellt/network-multitool",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c975c12c41c9",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/workspaces/dhcp6/clab-labslaac/PC3",
+        "clab-node-longname": "clab-labslaac-PC3",
+        "clab-node-name": "PC3",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/dhcp6/slaac-topo.yml",
+        "containerlab": "labslaac"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "router-cisco": {
+      "index": "3",
+      "shortname": "router-cisco",
+      "longname": "clab-labslaac-router-cisco",
+      "fqdn": "router-cisco.labslaac.io",
+      "group": "",
+      "labdir": "/workspaces/dhcp6/clab-labslaac/router-cisco",
+      "kind": "cisco_iol",
+      "image": "docker.io/arthurk99/cisco-iol:17.15.01",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c975c12c41c9",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_iol",
+        "clab-node-lab-dir": "/workspaces/dhcp6/clab-labslaac/router-cisco",
+        "clab-node-longname": "clab-labslaac-router-cisco",
+        "clab-node-name": "router-cisco",
+        "clab-node-type": "",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/dhcp6/slaac-topo.yml",
+        "containerlab": "labslaac"
+      },
+      "port-bindings": [
+      ]
+    },
+    "switch-nokia": {
+      "index": "4",
+      "shortname": "switch-nokia",
+      "longname": "clab-labslaac-switch-nokia",
+      "fqdn": "switch-nokia.labslaac.io",
+      "group": "",
+      "labdir": "/workspaces/dhcp6/clab-labslaac/switch-nokia",
+      "kind": "nokia_srlinux",
+      "image": "ghcr.io/nokia/srlinux:24.10.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "1a:60:04:00:00:00",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-c975c12c41c9",
+        "clab-node-group": "",
+        "clab-node-kind": "nokia_srlinux",
+        "clab-node-lab-dir": "/workspaces/dhcp6/clab-labslaac/switch-nokia",
+        "clab-node-longname": "clab-labslaac-switch-nokia",
+        "clab-node-name": "switch-nokia",
+        "clab-node-type": "ixrd3",
+        "clab-owner": "vscode",
+        "clab-topo-file": "/workspaces/dhcp6/slaac-topo.yml",
+        "containerlab": "labslaac"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "router-cisco",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:52:3d:b9",
+          "peer": "z"
+        },
+        "z": {
+          "node": "switch-nokia",
+          "interface": "e1-1",
+          "mac": "aa:c1:ab:7a:c6:23",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "PC1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:db:0c:03",
+          "peer": "z"
+        },
+        "z": {
+          "node": "switch-nokia",
+          "interface": "e1-2",
+          "mac": "aa:c1:ab:c6:04:da",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "PC2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:a5:fe:fc",
+          "peer": "z"
+        },
+        "z": {
+          "node": "switch-nokia",
+          "interface": "e1-3",
+          "mac": "aa:c1:ab:9a:75:44",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "PC3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:7d:7c:54",
+          "peer": "z"
+        },
+        "z": {
+          "node": "switch-nokia",
+          "interface": "e1-4",
+          "mac": "aa:c1:ab:44:38:55",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
