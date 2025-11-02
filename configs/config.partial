@@ -1,3 +1,7 @@
 conf t
 ipv6 unicast-routing
-
+interface e0/1
+ipv6 address 2001:db8:1::1/64
+ipv6 nd other-config-flag
+no shutdown
+exit
